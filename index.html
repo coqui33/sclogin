@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./scstyle.css">
+    <title>SC Login</title>
+
+<!-- Javascript routines -->
+<script src="./scScript.js"></script>
+
+</head>
+
+<body>
+
+<img src="./sclogo.jpg" alt="sclogo" width="20%">
+<h1>Homeowners Login</h1>
+
+<!--- Action --->
+
+<hr>
+
+  <label for="userID">User ID: (CASE SENSITIVE!)</label><br>
+  <input type="text" id="userID"  value=""><br><br>
+  <label for="houseNum">Sea Colony House number:</label><br>
+  <input type="text" id="houseNum" value=""><br><br>
+  <button class='button' onclick="buttonClick()">Log In</button>
+
+<p id="demo1">Click the "Login" button to enter the homeowners-only page.</p>
+<p></p>
+<p id="demo">If you do not yet have a userID, or have forgotten it, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKNBCZ1WNNVxy9FJs-RSQFqNWWn9U0oj0ZpZcUwR3zYvXV6Q/viewform?usp=sf_link/">click here to set up a new one.</a></p>
+<p id="debug1"></p>
+<p id="debug2"></p>
+<p id="debug3"></p>
+
+<hr>
+
+<script>
+myInclude();
+loadHomesArray();
+</script>
+
+</body>
+</html>
