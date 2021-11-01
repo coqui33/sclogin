@@ -65,8 +65,8 @@ function buttonClick() {
   } else { // an empty string
     failure = "Please type something into both text boxes.";
   }
-  document.getElementById("demo").innerHTML = failure + '<br><br>' +
-        '<strong>If you do not yet have a userID, or have forgotten it, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKNBCZ1WNNVxy9FJs-RSQFqNWWn9U0oj0ZpZcUwR3zYvXV6Q/viewform?usp=sf_link/">click here to set up a new one.</a></strong>';
+  document.getElementById("demo").innerHTML = '<strong>' + failure + '<br><br>' +
+        'If you do not yet have a userID, or have forgotten it, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKNBCZ1WNNVxy9FJs-RSQFqNWWn9U0oj0ZpZcUwR3zYvXV6Q/viewform?usp=sf_link/">click here to set up a new one.</a></strong>';
 }
 
 // --- Infinite ping-pong recursion of request/receive files until all includables have been expanded.
