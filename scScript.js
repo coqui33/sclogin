@@ -119,3 +119,6 @@ function loadHomesArray() {
 
 //  document.getElementById("debug2").innerHTML = 'Debug-B: ';
 } // --- end of load home array function
+
+function byPass() {
+}
