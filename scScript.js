@@ -121,7 +121,7 @@ function loadHomesArray() {
 } // --- end of load home array function
 
 function checkCookie() {
-  document.getElementById("debug1").innerHTML = "Test One";
-//  document.getElementById("debug1").innerHTML = localStorage.getItem("userID");
+//  document.getElementById("debug1").innerHTML = "Test One";
+  document.getElementById("debug1").innerHTML = localStorage.getItem("userID");
   localStorage.setItem("userID", "Testing");
 }
