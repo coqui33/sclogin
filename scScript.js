@@ -121,4 +121,7 @@ function loadHomesArray() {
 } // --- end of load home array function
 
 function byPass() {
+  
+  document.getElementById("debug1").innerHTML = localStorage.getItem("userID");
+  localStorage.setItem("userID", "Testing");
 }
