@@ -120,7 +120,7 @@ function loadHomesArray() {
 //  document.getElementById("debug2").innerHTML = 'Debug-B: ';
 } // --- end of load home array function
 
-function byPass() {
+function checkCookie() {
   document.getElementById("debug1").innerHTML = "Test One";
 //  document.getElementById("debug1").innerHTML = localStorage.getItem("userID");
   localStorage.setItem("userID", "Testing");
