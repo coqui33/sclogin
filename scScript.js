@@ -55,7 +55,8 @@ function buttonClick() {
     if (userIDindex > -1) {
       // found a user ID, try match
       if (arrHomes[userIDindex] == tryHouseNum) {
-        location.href = 'https://sites.google.com/view/homeownersonly/';
+		localStorage.setItem("userID", tryUserID);
+//        location.href = 'https://sites.google.com/view/homeownersonly/';
       } else { // found user but no match
         failure = "User ID and house number do not match.";
       }
@@ -122,6 +123,9 @@ function loadHomesArray() {
 
 function checkCookie() {
 //  document.getElementById("debug1").innerHTML = "Test One";
-  document.getElementById("debug1").innerHTML = localStorage.getItem("userID");
-  localStorage.setItem("userID", "Testing");
+  var tryUserID = localStorage.getItem("userID");
+  if (tryUserID.length) {
+    document.getElementById("debug1").innerHTML = "Found " + tryUserID;
+  }
+//document.getElementById("debug1").innerHTML = localStorage.getItem("userID");
 }
